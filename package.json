@@ -1,0 +1,25 @@
+{
+  "name": "grandline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/StrangerViki/grand-line.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/StrangerViki/grand-line#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^2.0.4",
+    "gulp": "^3.9.0"
+  },
+  "description": ""
+}

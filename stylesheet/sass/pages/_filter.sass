@@ -1,0 +1,364 @@
+//********************************Filter
+/*Color-line
+.set-colors
+  border-bottom: 2px solid RGB(178, 181, 185)
+  background-color: RGB(247, 247, 247)
+  padding-top: 8px
+
+.colors
+  margin-top: 18px
+  > div
+    display: inline-block
+    width: 53px
+    height: 15px
+    margin-right: 5px
+    margin-bottom: 22px
+    cursor: pointer
+
+.color-name
+  font-family: "Solomon" sans-serif
+  font-size: 11px
+  position: relative
+  top: 9px
+
+form
+  font-size: 12px
+  padding-bottom: 30px
+  color: RGB(167, 167, 167)
+
+input:checked + label
+  color: black
+
+.boder-under-form
+  border-bottom: 2px solid RGB(178, 181, 185)
+  margin-left: -18px
+
+.filter-side-bar
+  background-color: RGB(247, 247, 247)
+
+.side-bar-form:last-child
+  border-bottom: none
+
+/*Top Form
+
+.top-form-label
+  margin-right: 8px
+
+.colors-label
+  margin-right: 20px
+
+.check-all
+  font-size: 12px
+  color: RGB(149, 151, 154)
+
+/*SIDE BAR
+
+.hide
+  display: none
+
+/*First Form
+
+.side-bar-forms-label
+  margin-top: 6px
+
+.form-label
+  font-size: 16px
+  color: RGB(170, 7, 30)
+  font-weight: 600
+
+.form-open-menu
+  font-size: 10px
+  color: RGB(194, 170, 173)
+
+.right-label
+  text-align: right
+
+.fa-question-circle
+  color: #838689
+
+.check-all-first
+  margin-bottom: 18px
+  margin-top: 20px
+
+.check-all-second
+  margin-top: 20px
+
+.kind-checkbox-label
+  position: relative
+  display: block
+  -webkit-user-select: none
+  cursor: pointer
+
+div:not(.bla)
+  .kind-checkbox-label
+    padding-left: 20px
+  .kind-checkbox:checked + .kind-checkbox-label:before
+    background-image: url("../img/expand.png")
+    width: 11px
+    height: 12px
+  .kind-checkbox-label:before
+    content: ""
+    width: 11px
+    height: 12px
+    background-image: url("../img/expand-plus.png")
+    position: absolute
+    left: 0
+    top: 2px
+    display: block
+  .kind-checkbox
+    display: none
+
+.fa-chevron-up, .fa-chevron-down
+  color: #A9071E
+
+.check-box
+  margin-bottom: 18px
+
+.sub-check
+  margin-left: 14px
+
+.profiled-cell
+  display: inline-block
+  margin-left: 18px
+  margin-top: 13px
+
+/*Second Form
+
+.form-line-height div:nth-child(-n+10)
+  line-height: 34px
+
+/*Third Form
+
+.third-form-cell-left
+  margin-right: 20px
+  display: inline-block
+  margin-top: 25px
+
+.third-form-cell-right
+  display: inline-block
+  margin-top: 25px
+
+/*Show Product
+
+.show-else
+  height: 46px
+  background-color: RGB(170, 7, 30)
+  display: block
+  margin-left: -18px
+  text-align: center
+
+.show-text
+  color: white
+  font-size: 14px
+
+.main-chevron-right
+  color: white
+  margin-left: 30px
+
+.show-text, .main-chevron-right
+  margin-top: 13px
+
+/*Global Content
+
+.top-content
+  padding: 10px 33px 10px 42px
+  line-height: normal
+
+.article
+  font-size: 22px
+  color: RGB(170, 7, 30)
+  font-weight: 600
+  padding-top: 35px
+  display: table-cell
+  margin-bottom: 10px
+
+.breadcrumbs
+  font-size: 10px
+  color: RGB(194, 170, 173)
+  margin: 0
+  padding: 0
+  list-style-type: none
+  li
+    display: inline-block
+    margin-left: 3px
+
+.right-side
+  text-align: right
+  vertical-align: top
+  color: black
+
+.sort-by
+  font-size: 12px
+  color: RGB(64, 67, 70)
+
+.rectangle-symbol
+  background-image: url("../img/rectangl.png")
+  width: 10px
+  height: 7px
+  cursor: pointer
+
+.select-native
+  opacity: 0
+  position: absolute
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  z-index: 2
+  width: 100%
+  cursor: pointer
+
+.select-list
+  font-size: 12px
+  padding: 0 10px
+  position: relative
+
+.sort-by, .select-list
+  display: inline-block
+
+.view
+  display: inline-block
+  margin-left: 40px
+  font-size: 14px
+
+.fa-th-list
+  color: #404346
+
+.fa-th
+  color: #A9071E
+
+.rectangle-symbol, .list
+  display: inline-block
+
+.view-text
+  font-size: 12px
+  color: RGB(64, 67, 70)
+  margin-left: 10px
+
+.fa-th-list, .fa-th
+  margin-left: 10px
+
+.compare-box
+  width: 100%
+  height: auto
+
+.compare
+  border: 1px solid transparent
+  height: 28px
+  width: 172px
+  background-color: RGB(247, 247, 247)
+  cursor: pointer
+  text-align: left
+  float: right
+  margin-top: 24px
+  padding-top: 10px
+  margin-right: -33px
+
+.compare-text
+  text-decoration: underline
+  font-size: 13px
+  color: RGB(64, 67, 70)
+  margin-left: 20px
+
+.fa-search-plus
+  color: #404346
+
+.product
+  width: 243px
+  margin-top: 20px
+  margin-bottom: 15px
+  background-color: white
+  padding: 10px
+
+.prod-name
+  font-size: 16px
+  font-weight: 800
+  text-align: left
+  margin-left: 20px
+  color: #111111
+
+.prod-inf
+  font-size: 16px
+  font-weight: 600
+
+.check-compare, .increase
+  display: inline-block
+
+.check-compare
+  margin-right: 137px
+
+.compare-checkbox-label
+  font-size: 13px
+  position: relative
+  -webkit-user-select: none
+  cursor: pointer
+
+div:not(.bla)
+  .compare-checkbox-label
+    padding-left: 20px
+  .compare-checkbox:checked + .compare-checkbox-label:before
+    background-image: url("../img/check-box.png")
+    width: 13px
+    height: 13px
+    background-color: white
+  .compare-checkbox-label:before
+    content: ""
+    width: 13px
+    height: 13px
+    background: #404346
+    border-radius: 2px
+    position: absolute
+    left: 0
+    top: 2px
+    display: block
+  .compare-checkbox
+    display: none
+
+.prod-photo
+  padding: 5px
+
+.prod-img
+  max-width: 100%
+
+
+.add-in-basket
+  margin-right: 30px
+  &.active > .plus-symbol
+    display: none
+    .fa-check
+      display: inline
+    .shopping-cart
+      color: #A9071E
+      margin-left: -4px
+
+
+.basket-text
+  font-size: 13px
+  color: RGB(64, 67, 70)
+
+.plus-symbol, .fa-check
+  color: #2E9665
+
+.fa-check
+  display: none
+
+.shopping-cart
+  color: #404346
+  position: relative
+  bottom: 2px
+
+.plus-symbol
+  display: none
+  .fa-check
+    display: inline
+  .shopping-cart
+    color: #A9071E
+    margin-left: -4px
+
+.prod-price
+  font-size: 16px
+  color: RGB(170, 7, 30)
+  font-weight: 600
+
+.under-prod
+  margin-top: 10px

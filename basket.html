@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <title>Корзина</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!--Mobile Version-->
+<body>
+<!--HEADER-->
+<header class="col-lg-12">
+    <!--Contacts-->
+    <div class="header-contacts display-mobile-none">
+        <div class="adequation-block">
+            <div class="tel-contact">+7 (499) 712-02-34</div>
+            <div class="call-contact">
+                <div class="book-call">
+                    <a>
+                        <i class="fa fa-phone fa-2x"></i>
+                        <div class="book-call-text">Заказать обратный звонок</div>
+                    </a>
+                </div>
+                <div class="make-message">
+                    <a>
+                        <i class="fa fa-comment-o fa-2x"></i>
+                        <div class="make-message-text">Оставить сообщение</div>
+                    </a>
+                </div>
+            </div>
+            <ul class="menu-contact">
+                <li>
+                    <a href="#" class="menu-contact-elem">Заказ</a>
+                    <span class="separator">|</span>
+                </li>
+                <li>
+                    <a href="#" class="menu-contact-elem">Оплата</a>
+                    <span class="separator">|</span>
+                </li>
+                <li>
+                    <a href="#" class="menu-contact-elem">Доствка</a>
+                    <span class="separator">|</span></li>
+                <li>
+                    <a href="#" class="menu-contact-elem">Возраст</a>
+                    <span class="separator">|</span>
+                </li>
+                <li>
+                    <a href="#" class="menu-contact-elem">Гарантия</a>
+                    <span class="separator">|</span></li>
+                <li>
+                    <a href="#" class="menu-contact-elem">Инструкция(FAQ)</a>
+                    <span class="separator">|</span>
+                </li>
+                <li>
+                    <a href="#" class="menu-contact-elem">Контакты </a>
+                </li>
+            </ul>
+            <div class="region">
+                <div class="region-block">
+                    <div class="your-region">Ваш регион</div>
+                    <div class="region-name"><a>Санкт-Петербург</a></div>
+                </div>
+                <div class="map-marker"><i class="fa fa-map-marker fa-2x"></i></div>
+            </div>
+        </div>
+    </div>
+    <!--Logo Line-->
+    <div class="logo-line">
+        <div class="adequation-block">
+            <a href="#"><div class="logo"><img src="img-content/logo.png" class="logo-img"></div></a>
+            <div class="calculator-menu-block">
+                <ul class="calculator-menu">
+                    <li class="calculator-menu-item">
+                        <span class="calculator-menu-item-name">Расчет водостока</span>
+                        <span class="drain calculator-menu-item-img"></span>
+                    </li>
+                    <li class="calculator-menu-item">
+                        <span class="calculator-menu-item-name">Расчет кровли</span>
+                        <span class="roofing calculator-menu-item-img"></span>
+                    </li>
+                    <li class="calculator-menu-item">
+                        <span class="calculator-menu-item-name">Расчет забора</span>
+                        <span class="fence calculator-menu-item-img"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="phone-logo-user inline_block display_none">
+                <div class="inline_block"><i class="fa fa-key fa-2x fa-phone_param"></i></div>
+                <div class="inline_block"><i class="fa fa-shopping-cart fa-2x fa-phone_param"></i></div>
+                <div class="inline_block"><i class="fa fa-search fa-2x fa-phone_param"></i></div>
+                <div class="inline_block phone-logo__bar-symbol"><i class="fa fa-bars fa-2x fa-phone_param"></i></div>
+            </div>
+            <form class="form-search">
+                <input type="search" name="q" placeholder="Поиск" class="search-line float_left">
+                <input type="button" name="search-button" value="&#128269">
+            </form>
+            <a href="#" class="enter display-mobile-none">
+                <span>Вход</span>
+                <i class="fa fa-key fa-lg"></i>
+            </a>
+            <div class="main-basket display-mobile-none">
+                <a>
+                    <span >Корзина</span>
+                    <i class="fa fa-shopping-cart  fa-lg cart-img"></i>
+                    <span class="circle-basket"><span class="figure">1</span></span>
+                </a>
+                <div class="checkout"><a>Оформить заказ</a></div>
+            </div>
+        </div>
+    </div>
+    <!--Global Menu-->
+    <div class="global-menu display-mobile-none">
+        <div class="adequation-block">
+            <div class="menu-button" id="phone-open-menu">МЕНЮ</div>
+            <ul class="main-menu">
+                <li class="main-menu-elem"><a href="#"><span class="main-menu-img float_left"></span><span class="main-menu-name">Все товары</span></a></li>
+                <li class="active main-menu-elem"><a href="#"><span class="main-menu-img active float_left"></span><span class="main-menu-name">Кровля</span></a></li>
+                <li class="main-menu-elem"><a href="#"><span class="main-menu-img float_left"></span><span class="main-menu-name">Фасад</span></a></li>
+                <li class="main-menu-elem"><a href="#"><span class="main-menu-img float_left"></span><span class="main-menu-name">Ограждение</span></a></li>
+                <li class="main-menu-elem"><a href="#"><span class="main-menu-img float_left"></span><span class="main-menu-name">Инструмент</span></a></li>
+                <li class="main-menu-elem"><a href="#"><span class="main-menu-img float_left"></span><span class="main-menu-name">Придомовая территория</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="phone-menu display_none">
+        <div class="col col-xs-6 inline_block">
+            <ul>
+                <li class="phone-menu__item">
+                    <a href="#">
+                        <span class="main-menu-img float_left"></span>
+                        <span class="main-menu-name">Все товары</span>
+                    </a>
+                </li>
+                <li class="phone-menu__item">
+                    <a href="#">
+                        <span class="main-menu-img float_left"></span>
+                        <span class="main-menu-name">Ограждение</span>
+                    </a>
+                </li>
+                <li class="phone-menu__item">
+                    <a href="#">
+                        <span class="main-menu-img float_left"></span>
+                        <span class="main-menu-name">Инструмент</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col col-xs-6 inline_block">
+            <ul>
+                <li class="phone-menu__item">
+                    <a href="#">
+                        <span class="main-menu-img float_left"></span>
+                        <span class="main-menu-name">Кровля</span>
+                    </a>
+                </li>
+                <li class="phone-menu__item">
+                    <a href="#">
+                        <span class="main-menu-img float_left"></span>
+                        <span class="main-menu-name">Фасад</span>
+                    </a>
+                </li>
+                <li class="phone-menu__item">
+                    <a href="#">
+                        <span class="main-menu-img float_left"></span>
+                        <span class="main-menu-name last-main-menu__name">Придомовая територия</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!--CONTENT-->
+<div class="adequation-block">
+    <div class="col col-lg-12 container-block">
+        <div class="breadcrumbs-block">
+            <ul  href="#" class="breadcrumbs">
+                <li><a>Главная </a>/</li>
+                <li><a>Корзина </a></li>
+            </ul>
+        </div>
+        <div class="article-block">
+            <span class="article-block__headline">Корзина</span>
+        </div>
+        <div class="scroll_table">
+            <div class="cart-table">
+                <div class="bar-table col-lg-12">
+                    <div class="bar-info-tr table-headline ">
+                        <div class="bar-info-td col-lg-4 left_align"><span class="info-about-product-text bar-info-td_position">Кровля</span></div>
+                        <div class="bar-info-td col-lg-1_5">Длинна</div>
+                        <div class="bar-info-td col-lg-1_5">Цена за м&#178;</div>
+                        <div class="bar-info-td col-lg-1_5">Кол-во м&#178;</div>
+                        <div class="bar-info-td col-lg-1_5">Кол-во</div>
+                        <div class="bar-info-td col-lg-1_5">Стоимость</div>
+                        <div class="bar-info-td col-lg-0_5"></div>
+                    </div>
+                    <div class="bar-info-tr">
+                        <div class="bar-info-td left_align">
+                            <img src="img-content/countri.png" class="inline_block">
+                            <div class="inline_block">
+                                <span class="product-headline">Металлочерепица Kvinta</span>
+                                <span class="product-parameter">17 0,5 PE-Double-foil RAL 6005</span>
+                            </div>
+                        </div>
+                        <div class="bar-info-td">
+                            <span>2м</span>
+                            <i class="fa fa-sort"></i>
+                        </div>
+                        <div class="bar-info-td">
+                            <span>45000 рублей</span>
+                        </div>
+                        <div class="bar-info-td">3м&#178;</div>
+                        <div class="bar-info-td">
+                            <span>3шт</span>
+                            <i class="fa fa-sort"></i>
+                        </div>
+                        <div class="bar-info-td">
+                            <span>9 000р.</span>
+                        </div>
+                        <div class="bar-info-td">
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="bar-info-tr">
+                        <div class="bar-info-td left_align">
+                            <img src="img-content/countri.png" class="cart-table-first-row inline_block">
+                            <div class=" inline_block">
+                                <span class="product-headline">Металлочерепица Kvinta</span>
+                                <span class="product-parameter">17 0,5 PE-Double-foil RAL 6005</span>
+                            </div>
+                        </div>
+                        <div class="bar-info-td">
+                            <span>4.5м</span>
+                            <i class="fa fa-sort"></i>
+                        </div>
+                        <div class="bar-info-td">
+                            <span>2000 рублей</span>
+                        </div>
+                        <div class="bar-info-td">3м&#178;</div>
+                        <div class="bar-info-td">
+                            <span>3шт</span>
+                            <i class="fa fa-sort"></i>
+                        </div>
+                        <div class="bar-info-td">
+                            <span>9 000р.</span>
+                        </div>
+                        <div class="bar-info-td">
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sum">
+            <span class="sum__text">Сумма:</span>
+            <span class="sum__value">14 000р.</span>
+        </div>
+
+        <div class="scroll_table">
+            <div class="cart-table">
+                <div class="bar-table col-lg-12">
+                    <div class="bar-info-tr table-headline ">
+                        <div class="bar-info-td col-lg-6 left_align"><span class="info-about-product-text bar-info-td_position">Другие товары</span></div>
+                        <div class="bar-info-td col-lg-2_5">Цена за штуку</div>
+                        <div class="bar-info-td col-lg-1_5">Количество</div>
+                        <div class="bar-info-td col-lg-1_5">Стоимость</div>
+                        <div class="bar-info-td col-lg-0_5"></div>
+                    </div>
+                    <div class="bar-info-tr">
+                        <div class="bar-info-td left_align">
+                            <img src="img-content/samorezi.png" class="cart-table-firs-row inline_block">
+                            <div class="cart-table-firs-row inline_block">
+                                <span class="product-headline">Саморезы кровельные, 10шт, упаковка</span>
+                                <span class="product-parameter">17 0,5 PE-Double-foil RAL 6005</span>
+                            </div>
+                        </div>
+                        <div class="bar-info-td">
+                            <span>1800 рублей</span>
+                        </div>
+                        <div class="bar-info-td">
+                            <span>1шт</span>
+                            <i class="fa fa-sort"></i>
+                        </div>
+                        <div class="bar-info-td">
+                            <span>1 800р.</span>
+                        </div>
+                        <div class="bar-info-td">
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="sum">
+            <span class="sum__text">Сумма:</span>
+            <span class="sum__value">1 800р.</span>
+        </div>
+
+        <div class="delivery-info">
+            <div class="info-about-product"></div>
+            <div class="delivery-info-table-block">
+                <div class="col col-lg-3 col-md-4 col-sm-12 col-xs-12  inline_block">
+                    <div class="info-about-product"><span class="info-about-product-text">Информация о заказе</span></div>
+                    <div class="delivery-info-table">
+                        <div class="size-prod-td">
+                            <div class="size-prod-tr">Длинна</div>
+                            <div class="size-prod-tr">1200 мм</div>
+                        </div>
+                        <div class="size-prod-td">
+                            <div class="size-prod-tr">Вес груза</div>
+                            <div class="size-prod-tr">10 кг</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-3 col-sm-12 col-xs-12  inline_block">
+                    <div class="info-about-product"><span class="info-about-product-text">Расчет доставки</span></div>
+                    <div class="delivery-info-table">
+                        <div class="user-form-deliver__text">Введите адрес доставки:</div>
+                        <form class="form-delivery">
+                            <div class="inline_block"><input type="text" name="q" placeholder="Город" class="input-text__town"></div>
+                            <div class="inline_block"><input type="text" name="q" placeholder="Улица" class="input-text__street"></div>
+                            <div class="inline_block margin_right"><input type="text" name="q" placeholder="Дом" class="input-text__home"></div>
+                            <div class="inline_block">
+                                <input type="checkbox" name="q" id="need-faucet" class="">
+                                <label for="need-faucet">Нужен кран-манипулятор</label>
+                            </div>
+                        </form>
+                        <div class="delivery-button">
+                            <span class="delivery-button__text">Расчитать стоимость доставки</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-1 col-sm-12 col-xs-12 inline_block empty-col"></div>
+                <div class="col col-lg-3 col-md-3 col-sm-12 col-xs-12 inline_block">
+                    <div class="final-sum">
+                        <span class="final-sum__text">Общая сумма:</span>
+                        <span class="final-sum__value">15 800р.</span>
+                    </div>
+                    <div class="delivery-button">
+                        <span class="delivery-button__text delivery-button_bold">Оформить заказ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col col-lg-12 col-md-12  bottom-info">
+        <div class="delivery-rules">
+            <div class="info-about-product">
+                <span class="info-about-product-text">Правила доставки</span>
+            </div>
+            <div class="col col-lg-12">
+                <div class="col col-lg-6 col-xs-12 delivery-rules__text float_left">Металлочерепица Country подчеркнет индивидуальность Вашего дома.
+                    Крупный рисунок профиля выгодно отличает кровлю и существенно повышает
+                    ее прочность. Закругленная форма гребня отражает Средиземноморский стиль
+                    кровли, а мягкие и ровные линии волн придают металлочерепице Country
+                    схожесть с натуральной черепицей. С Country Ваш дом будет выразительным и
+                    оригинальным долгие годы.</div>
+                <div class="col col-lg-6 col-xs-12 delivery-rules__text">Металлочерепица Country подчеркнет индивидуальность Вашего дома.
+                    Крупный рисунок профиля выгодно отличает кровлю и существенно повышает
+                    ее прочность. Закругленная форма гребня отражает Средиземноморский стиль
+                    кровли, а мягкие и ровные линии волн придают металлочерепице Country
+                    схожесть с натуральной черепицей. С Country Ваш дом будет выразительным и
+                    оригинальным долгие годы.</div>
+            </div>
+        </div>
+        <div class="info-about-product">
+            <span class="info-about-product-text">Вам может быть интересно</span>
+        </div>
+        <div class="may-be-interesting">
+            <div class="add-elem-block">
+                <div class="additional-elem">Доборные элементы</div>
+                <div class="add-elem-img"><a><img src="img-content/add-elem-1.png"></a></div>
+                <div class="add-elem-img"><a><img src="img-content/add-elem-2.png"></a></div>
+                <div class="add-elem-img"><a><img src="img-content/add-elem-3.png"></a></div>
+                <div class="add-elem-img"><a><img src="img-content/add-elem-4.png"></a></div>
+                <div class="add-elem-img"><a><img src="img-content/add-elem-5.png"></a></div>
+                <div class="add-elem-img"><a><img src="img-content/add-elem-6.png"></a></div>
+                <div class="add-elem-img"><a><img src="img-content/add-elem-7.png"></a></div>
+                <div class="add-elem-img"><a><img src="img-content/add-elem-8.png"></a></div>
+                <div class="look-all"><a>Посмотреть все</a></div>
+            </div>
+        </div>
+        <div class="col col-lg-12 additional-prod">
+            <div class="additional-elem">Дополняющие товары</div>
+
+            <div class="col col-lg-3 col-sm-6 col-md-6 col-xs-6">
+                <div class="product">
+                    <a href=""><div class="prod-name">Саморезы кровельные</div></a>
+                    <a href="img-content/add-product.png" class="fancybox"><i class="fa fa-search-plus"></i></a>
+                    <div class="prod-photo"> <a  href="#"><img src="img-content/add-product.png" class="prod-img"></a></div>
+                    <span class="prod-inf">17 0,5 PE-Double-foil RAL 6005</span>
+                    <div class="under-prod">
+                        <a class="add-in-basket active float_left">
+                            <i class="fa fa-plus plus-symbol"></i>
+                            <i class="fa fa-check"></i>
+                            <i class="fa fa-shopping-cart shopping-cart fa-lg"></i>
+                            <span class="basket-text">В корзину</span>
+                        </a>
+                        <div class="prod-price">800 рублей</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-3 col-sm-6 col-md-6 col-xs-6">
+                <div class="product">
+                    <a href=""><div class="prod-name">Саморезы кровельные</div></a>
+                    <a href="img-content/add-product.png" class="fancybox"><i class="fa fa-search-plus"></i></a>
+                    <div class="prod-photo"> <a  href="#"><img src="img-content/add-product.png" class="prod-img"></a></div>
+                    <span class="prod-inf">17 0,5 PE-Double-foil RAL 6005</span>
+                    <div class="under-prod">
+                        <div class="under-prod">
+                            <a class="add-in-basket float_left">
+                                <i class="fa fa-plus plus-symbol"></i>
+                                <i class="fa fa-shopping-cart shopping-cart fa-lg"></i>
+                                <span class="basket-text">В корзину</span>
+                            </a>
+                            <div class="prod-price">800 рублей</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-sm-6 col-md-6 col-xs-6">
+                <div class="product">
+                    <a href=""><div class="prod-name">Саморезы кровельные</div></a>
+                    <a href="img-content/add-product.png" class="fancybox"><i class="fa fa-search-plus"></i></a>
+                    <div class="prod-photo"> <a  href="#"><img src="img-content/add-product.png" class="prod-img"></a></div>
+                    <span class="prod-inf">17 0,5 PE-Double-foil RAL 6005</span>
+                    <div class="under-prod">
+                        <div class="under-prod">
+                            <a class="add-in-basket float_left">
+                                <i class="fa fa-plus plus-symbol"></i>
+                                <i class="fa fa-shopping-cart shopping-cart fa-lg"></i>
+                                <span class="basket-text">В корзину</span>
+                            </a>
+                            <div class="prod-price">800 рублей</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-sm-6 col-md-6 col-xs-6">
+                <div class="product">
+                    <a href=""><div class="prod-name">Саморезы кровельные</div></a>
+                    <a href="img-content/add-product.png" class="fancybox"><i class="fa fa-search-plus"></i></a>
+                    <div class="prod-photo"> <a  href="#"><img src="img-content/add-product.png" class="prod-img"></a></div>
+                    <span class="prod-inf">17 0,5 PE-Double-foil RAL 6005</span>
+                    <div class="under-prod">
+                        <div class="under-prod">
+                            <a class="add-in-basket float_left">
+                                <i class="fa fa-plus plus-symbol"></i>
+                                <i class="fa fa-shopping-cart shopping-cart fa-lg"></i>
+                                <span class="basket-text">В корзину</span>
+                            </a>
+                            <div class="prod-price">800 рублей</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--FOOTER-->
+<footer>
+    <div class="footer-label">
+        <div class="adequation-block">
+            <a href="#" class="footer-logo"><img src="img-content/logo.png" class="footer-img"></a>
+            <div class="social-logo">
+                <i class="fa fa-facebook-official fa-2x"></i>
+                <i class="fa fa-instagram fa-2x"></i>
+                <i class="fa fa-vk fa-2x"></i>
+                <i class="fa fa-linkedin fa-2x"></i>
+            </div>
+            <div class="footer-tel">
+                <span class="footer-tel-text">телефон:</span>
+                <span class="footer-telephon">+7 (499) 712-02-34</span>
+            </div>
+            <div class="call-contact call-contact-xs">
+                <div class="book-call">
+                    <a>
+                        <i class="fa fa-phone fa-2x"></i>
+                        <div class="book-call-text">Заказать обратный звонок</div>
+                    </a>
+                </div>
+                <div class="make-message">
+                    <a>
+                        <i class="fa fa-comment-o fa-2x"></i>
+                        <div class="make-message-text">Оставить сообщение</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-list footer-list_none">
+        <div class="adequation-block">
+            <div class="all-products"><a>Все товары</a></div>
+            <div class="col-lg-2 col-sm-1_9 inline_block">
+                <ul class="column-list">
+                    <li class="list-title"><a>Кровля</a></li>
+                    <li><a>Металлочерепица</a></li>
+                    <li><a>Профнастил</a></li>
+                    <li><a>Фальцевая кровля</a></li>
+                    <li><a>Decra</a></li>
+                    <li><a>Мягкая кровля</a></li>
+                    <li><a>Доборные элементы</a></li>
+                    <li><a>Флюгера</a></li>
+                    <li><a>Vilpe</a></li>
+                    <li><a>Элементы безопасности</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-sm-1_9 inline_block">
+                <ul class="column-list">
+                    <li class="list-title"><a>Заборы</a></li>
+                    <li><a>Профнастил</a></li>
+                    <li><a>Модульные ограждения</a></li>
+                    <li><a>Сварные ограждения</a></li>
+                    <li><a>Штакетник</a></li>
+                    <li><a>Колпаки</a></li>
+                    <li class="list-title"><a>Водосток</a></li>
+                    <li><a>Металлический водосток</a></li>
+                    <li><a>Пластиковый водосток</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-sm-1_9 inline_block">
+                <ul class="column-list">
+                    <li class="list-title"><a>Фасад</a></li>
+                    <li><a>Профнастил стеновой</a></li>
+                    <li><a>Металлический сайдинг</a></li>
+                    <li><a>Виниловый сайдинг</a></li>
+                    <li><a>Цокольные панели</a></li>
+                    <li class="list-title"><a>Утеплитель</a></li>
+                    <li><a>Rockwool</a></li>
+                    <li><a>Технониколь</a></li>
+                    <li><a>Knauf</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-sm-1_9 inline_block">
+                <ul class="column-list">
+                    <li class="list-title"><a>Гидро-паро изоляционные пленки</a></li>
+                    <li><a>Rackool</a></li>
+                    <li><a>Технониколь</a></li>
+                    <li><a>Knauf</a></li>
+                    <li class="list-title"><a>Крепеж</a></li>
+                    <li><a>Саморезы кровленые</a></li>
+                    <li><a>Саморезы ГК</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-sm-1_9 inline_block">
+                <ul class="column-list">
+                    <li class="list-title"><a>Инструмент</a></li>
+                    <li><a>Кровельный</a></li>
+                    <li><a>Заборы/буры</a></li>
+                    <li class="list-title"><a>Окна ПВХ</a></li>
+                    <li><a>Пластиковые Окна</a></li>
+                    <li><a>Двери ПВХ</a></li>
+                    <li class="list-title"><a>Теплицы</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-sm-1_9 inline_block">
+                <ul class="column-list">
+                    <li class="list-title"><a>Заказ</a></li>
+                    <li class="list-title list-title-last"><a>Оплата</a></li>
+                    <li class="list-title list-title-last"><a>Доставка</a></li>
+                    <li class="list-title list-title-last"><a>Возврат</a></li>
+                    <li class="list-title list-title-last"><a>Гарантия</a></li>
+                    <li class="list-title list-title-last"><a>Инструкция (FAQ)</a></li>
+                    <li class="list-title list-title-last"><a>Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-list phone-footer-list_none">
+        <div class="adequation-block">
+            <div class="col col-xs-6 inline_block">
+                <ul class="column-list ">
+                    <li class="list-title"><a>Все товары</a></li>
+                    <li class="list-title"><a>Кровля</a></li>
+                    <li class="list-title"><a>Заборы</a></li>
+                    <li class="list-title"><a>Водосток</a></li>
+                    <li class="list-title"><a>Фасад</a></li>
+                    <li class="list-title"><a>Утеплитель</a></li>
+                    <li class="list-title"><a>Гидро-паро изоляционные пленки</a></li>
+                    <li class="list-title"><a>Крепеж</a></li>
+                    <li class="list-title"><a>Инструмент</a></li>
+                    <li class="list-title"><a>Окна ПВХ</a></li>
+                    <li class="list-title"><a>Теплицы</a></li>
+                </ul>
+            </div>
+            <div class="col col-xs-6 inline_block">
+                <ul class="column-list">
+                    <li class="list-title"><a>Заказ</a></li>
+                    <li class="list-title list-title-last"><a>Оплата</a></li>
+                    <li class="list-title list-title-last"><a>Доставка</a></li>
+                    <li class="list-title list-title-last"><a>Возврат</a></li>
+                    <li class="list-title list-title-last"><a>Гарантия</a></li>
+                    <li class="list-title list-title-last"><a>Инструкция (FAQ)</a></li>
+                    <li class="list-title list-title-last"><a>Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick-1.5.7/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/frontend.js"></script>
+</body>
+</html>
